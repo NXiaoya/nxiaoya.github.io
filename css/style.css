@@ -30,6 +30,7 @@ section {
 	box-sizing: border-box;
 	padding: 0 20px;
 	position: relative;
+    justify-content: center;
 }
 /*-------Hero---------*/
 #header{
@@ -88,7 +89,7 @@ section {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
-  position: relative;
+  position:relative;
   display: inline-block;
 }
 span {
@@ -194,8 +195,12 @@ font-size:medium;
 	margin-right: 0;
 }
 
+.two.col {
+	width: 40%;
+}
+
 .three.col {
-	width: 50%;
+	width: 30%;
 }
 
 /* For Scroll button */
