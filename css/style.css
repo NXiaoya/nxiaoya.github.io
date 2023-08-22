@@ -409,9 +409,11 @@ input.chk-btn:not(:checked) + label:hover {
     margin: 0 0 10px; /* Add spacing between columns */
   }
 
-  /* Additional mobile adjustments as needed */
-
-  /* ... (rest of the media query and CSS remains unchanged) */
+  span {
+    position: relative;
+    z-index: 3;
+    font-size: large;
+  }
 }
 
 
