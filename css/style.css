@@ -3,27 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-@media screen and (min-width: 768px) {
-  /* Adjust styles for laptop screens */
-
-  /* For example, you can modify the container width or alignment */
-  .container {
-    max-width: 1140px;
-    margin: 0 auto;
-  }
-
-  /* Adjust other styles as needed */
-}
-
-/* Styles for smartphone screens (portrait) */
-@media screen and (max-width: 767px) {
-  /* Adjust styles for smartphone screens */
-
-  /* For example, you can stack elements vertically or adjust font sizes */
-  .container {
-    padding: 0 10px;
-  }
-}
 html {
   scroll-behavior: smooth;
 }
@@ -360,21 +339,81 @@ input.chk-btn:not(:checked) + label:hover {
 
 /* Mobile Devices */
 
-@media all and (max-width: 550px) {
- .three.col{
-	float: none;
-	width: 100%;
-}
-.hide-on-mobile {
-	display: none !important;
-	width: 0;
-	height: 0;
-}
-}
-.container:after, .row:after {
-	content: "";
-	display: table;
-	clear: both;
+@media(max-width: 768px) {
+  /* Mobile font sizes and adjustments */
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Header styles for mobile */
+  #header h2 {
+    font-size: 40px;
+  }
+
+  #header h3 {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+
+  /* AppDownload styles for mobile */
+  .AppDownload {
+    max-width: 90%; /* Reduce max-width to fit smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin: 10px auto 0;
+  }
+
+  .AppDownload p {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  .AppDownload h3 {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  /* Installation guide styles for mobile */
+  .installation-guide {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .installation-guide p {
+    margin-bottom: 5px; /* Reduce spacing between step headings and content */
+  }
+
+  .installation-guide ol li {
+    margin-bottom: 5px; /* Reduce spacing between list items */
+  }
+
+  /* Title section styles for mobile */
+  .title h1 {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  .title h3 {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+
+  /* Navbar font size for mobile */
+  .navbar-nav {
+    font-size: small;
+  }
+
+  /* Scroll down button styles for mobile */
+  .scroll-down {
+    display: none; /* Hide the scroll down button on mobile */
+  }
+
+  /* Columns styles for mobile */
+  .col {
+    width: 100%; /* Full width for columns on mobile */
+    margin: 0 0 10px; /* Add spacing between columns */
+  }
+
+  /* Additional mobile adjustments as needed */
+
+  /* ... (rest of the media query and CSS remains unchanged) */
 }
 
 
+
+  
