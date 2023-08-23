@@ -337,20 +337,6 @@ input.chk-btn:not(:checked) + label:hover {
       width: 720px; /* Make the iframe width 100% to match the container */
       height: 420px;
     }
-  /* Center-align the "Find out more" button */
-  .about .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Add some spacing between the text and button */
-  }
-
-  .AboutInfo .button a {
-    width: 100%; /* Set the button width to fill the container */
-    height: 60px; /* Adjust the button height as desired */
-    padding: 20px; /* Adjust the button padding for spacing */
-    font-size: 18px; /* Adjust the font size for better visibility */
-  }
   /* Style for the installation guide */
 .installation-guide {
   margin-bottom: 20px; /* Add some spacing at the bottom */
