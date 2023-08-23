@@ -287,108 +287,101 @@ input.chk-btn:not(:checked) + label:hover {
   background-color: #8ea2e5 !important;
 }
 
-/*scroll down animation*/
 
-@keyframes scroll-down {
-  0% {
-    /* top:20%; */
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    top: 90%;
-    opacity: 0;
-  }
-}
 
 /* Mobile Devices */
 
-@media(max-width: 768px) {
-  /* Mobile font sizes and adjustments */
-  body {
-    font-size: 20px;
-    line-height: 1.4;
+@media only screen and (max-width:1200px) {
+  .navbar-nav{
+    font-size: 35px;
+    top: 75px;
+   
+    }
+  .navbar-header{
+    font-size: 40px ;
+    top: 75px;
   }
-  .container {
-    width: 100%;
-    max-width: 768px;
-    box-sizing: border-box;
-    padding: 0 px;
-    position: relative;
-      justify-content: center;
-  }
+    /* Adjust About and Demo Video layout */
+    .AboutInfo .row {
+      flex-direction: column-reverse;
+    }
+  
+    .AboutInfo .two.col {
+      width: 100%;
+      margin: 0;
+    }
+    .button a {
+      width: 100%; /* Set the button width to fill the container */
+      height: 60px; /* Adjust the button height as desired */
+      padding: 20px; /* Adjust the button padding for spacing */
+      font-size: 18px; /* Adjust the font size for better visibility */
+    }
 
-  /* Header styles for mobile */
-  #header h2 {
-    font-size: 40px;
+   /* Increase font size in the "About MARTA" section */
+   .AboutInfo blockquote h2 {
+    font-weight: bold; /* Make the step headings bold */
+    font-size: 40px; /* Adjust the font size as desired */
+    line-height: 1.6; /* Optional: Adjust the line height for better readability */
   }
-
-  #header h3 {
-    font-size: 30px;
-    margin-top: -30px;
+   .AboutInfo blockquote h3 {
+    font-weight: bold; /* Make the step headings bold */
+    font-size: 30px; /* Adjust the font size as desired */
+    line-height: 1.6; /* Optional: Adjust the line height for better readability */
   }
-
-  /* AppDownload styles for mobile */
-  .AppDownload {
-    max-width: 80%; /* Reduce max-width to fit smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
-    margin: 10px auto 0;
+   .AboutInfo blockquote p {
+    font-size: 30px; /* Adjust the font size as desired */
+    line-height: 1.6; /* Optional: Adjust the line height for better readability */
   }
-
-  .AppDownload p {
-    font-size: 16px; /* Adjust font size for mobile */
-  }
-
-  .AppDownload h3 {
-    font-size: 18px; /* Adjust font size for mobile */
-  }
-
-  /* Installation guide styles for mobile */
-  .installation-guide {
-    font-size: 14px; /* Adjust font size for mobile */
-  }
-
-  .installation-guide p {
-    margin-bottom: 5px; /* Reduce spacing between step headings and content */
-  }
-
-  .installation-guide ol li {
-    margin-bottom: 5px; /* Reduce spacing between list items */
-  }
-
-  /* Title section styles for mobile */
-  .title h1 {
-    font-size: 24px; /* Adjust font size for mobile */
+    /* Increase the size of the video iframe */
+    .AboutInfo blockquote iframe {
+      width: 720px; /* Make the iframe width 100% to match the container */
+      height: 420px;
+    }
+  /* Center-align the "Find out more" button */
+  .about .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing between the text and button */
   }
 
-  .title h3 {
-    font-size: 20px; /* Adjust font size for mobile */
+  .AboutInfo .button a {
+    width: 100%; /* Set the button width to fill the container */
+    height: 60px; /* Adjust the button height as desired */
+    padding: 20px; /* Adjust the button padding for spacing */
+    font-size: 18px; /* Adjust the font size for better visibility */
   }
-
-  /* Navbar font size for mobile */
-  .navbar-nav {
-    font-size: small;
-  }
-
-  /* Scroll down button styles for mobile */
-  .scroll-down {
-    display: none; /* Hide the scroll down button on mobile */
-  }
-
-  /* Columns styles for mobile */
-  .col {
-    width: 100%; /* Full width for columns on mobile */
-    margin: 0 0 10px; /* Add spacing between columns */
-  }
-
-
+  /* Style for the installation guide */
+.installation-guide {
+  margin-bottom: 20px; /* Add some spacing at the bottom */
+  text-align: left; /* Align the text to the left */
+  font-size: 25px; /* Adjust the font size */
+  line-height: 1.6; /* Adjust the line height */
+}
+.installation-guide h3 {
+  font-weight: bold; /* Make the step headings bold */
+  font-size: 25px; /* Adjust the font size */
+  margin-bottom: 10px; /* Add spacing between step headings and content */
 }
 
+
+.installation-guide p {
+  font-weight: bold; /* Make the step headings bold */
+  font-size: 25px; /* Adjust the font size */
+  margin-bottom: 10px; /* Add spacing between step headings and content */
+}
+
+.installation-guide ol {
+  list-style-position: inside; /* Left-justify the list items */
+  padding-left: 0; /* Remove default padding */
+}
+
+.installation-guide ol li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+    
+  
+}
 
 
   
